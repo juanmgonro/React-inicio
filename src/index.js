@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { NombreCompleto as Name} from './components/NombreCompleto';
+import Mascota from './components/mascota';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    <Name name = "Sergio" age={30} show= {true}/>
+    <Mascota name = "Solovino" age= {8} show= {false}/>
+    <Name name = "Pax" age= {30} show= {false}/>
+    <Name name="Miriam" age={24} show= {true}/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
